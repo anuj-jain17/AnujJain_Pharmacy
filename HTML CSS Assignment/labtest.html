@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="labtest.css">
+    <title>Lab Test Form</title>
+</head>
+
+<body>
+    <main>
+        <div class="form-container">
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="fullname">Your Contact Details:</label>
+                    <div class="div-group">
+                        <input type="text" id="fullname" name="fullname" placeholder="Full Name" required><br>
+                        <input type="text" id="patientid" name="patientid" placeholder="Patient Id (if exist)"><br>
+                    </div>
+                    <div class="div-group">
+                        <input type="tel" id="contact" name="contact" placeholder="Contact Number" required><br>
+                        <input type="email" id="email" name="email" placeholder="Email id" required><br>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="address">Address:</label>
+                    <div class="div-group">
+                        <input type="text" id="house" name="house" placeholder="H-No" required>
+                        <input type="text" id="street" name="street" placeholder="Street" required>
+                    </div>
+                    <div class="div-group">
+                        <input type="text" id="area" name="area" placeholder="Area" required>
+                    </div>
+                    <p>District:</p>
+                    <select id="district" name="district" required>
+                        <option value="" disabled selected>Choose</option>
+                        <option value="Chosen">Chosen</option>
+
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Choose the Test Type:</label>
+                    <input type="checkbox" id="cbc" name="testtype[]" value="CBC">CBC <br>
+                    <input type="checkbox" id="completeurine" name="testtype[]" value="Complete Urine">Complete Urine
+                    <br>
+                    <input type="checkbox" id="lipidprofile" name="testtype[]" value="Lipid Profile">Lipid Profile <br>
+                    <input type="checkbox" id="tsh" name="testtype[]" value="Thyroid Stimulating Hormone (TSH)">Thyroid
+                    Stimulating Hormone (TSH) <br>
+                    <input type="checkbox" id="glucosetest" name="testtype[]" value="Glucose Test">Glucose Test <br>
+                </div>
+                <div class="form-group">
+                    <label>Do you want hard copy of report?</label>
+                    <input type="radio" id="yes" name="hardcopy" value="Yes">Yes
+                    <input type="radio" id="no" name="hardcopy" value="No">No
+                </div>
+                <div class="form-group">
+                    <label for="date">Select Your Comfortable Date and Time:</label>
+                    <input type="date" id="date" name="date" required>
+                    <input type="time" id="time" name="time" required>
+                </div>
+            </form>
+            
+            <img src="Images/Lab-Test/lab-test.jpg" alt="Image" class="form-image">
+            
+        </div>
+
+    </main>
+    <div class="button-container">
+        <input type="reset" value="Reset">
+        <input type="submit" value="Submit">
+    </div>
+</body>
+
+</html>

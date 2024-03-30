@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.form-container {
+    background-color: #f9f9f9;
+    display: flex;
+    width: 800px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 5);
+    height: 70vh;
+    overflow-y: auto; 
+}
+
+.form-container form {
+    flex-grow: 1; 
+    padding: 20px;
+    max-width:430px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.div-group{
+    display: flex;
+    flex-direction: row;
+    margin-right: 5px;  
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="date"],
+input[type="time"],
+select {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 7px;
+    margin-right: 10px;
+}
+
+.form-image {
+    max-width: 60%;
+    height: 70vh;
+    position: fixed;
+    right: 260px; 
+}
+
+ .button-container {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+} 
+
+.button-container input[type="reset"],
+.button-container input[type="submit"] {
+    padding: 5px 10px;
+    background-color: violet;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
